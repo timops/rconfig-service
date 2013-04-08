@@ -12,5 +12,6 @@ include_recipe 'tftp::server'
 cookbook_file "#{node['tftp']['directory']}/router.cfg" do
   backup false
   action :create_if_missing
-  mode 0666
+  owner node['tftp']['username']
+  mode 0644
 end

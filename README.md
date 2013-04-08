@@ -23,7 +23,9 @@ This is a simple cookbook designed to do only a few things:
 
 `default['tftp']['directory']` - Directory where router configurations
 are served from.
+
 `default['tftp']['username']` - Owner of tftpd process.
+
 `default['tftp']['address']` - <ip_address:port> that tftpd will listen
 on.
 
